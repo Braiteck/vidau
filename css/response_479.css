@@ -1,0 +1,357 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 22px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        padding: 12px 0;
+    }
+
+
+    .mob_header .logo img
+    {
+        height: 28px;
+    }
+
+
+    .mob_header .phone
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-left: 0;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        width: 46px;
+        margin-left: 10px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+    .block_head .title
+    {
+        width: calc(100% - 20px);
+        padding: 10px 28px 10px 20px;
+    }
+
+
+    .block_head .order_btn
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .form .bottom .agree
+    {
+        margin-bottom: 16px;
+    }
+
+    .form .bottom .agree,
+    .form .bottom .submit
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .title small
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .first_section .info
+    {
+        padding-right: 24px;
+    }
+
+    .first_section .info .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        padding: 16px 20px 16px 20px;
+    }
+
+    .first_section .info .title small
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        margin-top: 4px;
+    }
+
+    .first_section .info .title img
+    {
+        right: -34px;
+
+        width: 100px;
+    }
+
+
+    .first_section .info .link
+    {
+        font-size: 15px;
+
+        margin-left: 20px;
+    }
+
+
+    .first_section .bg
+    {
+        left: 0;
+
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-bottom: -30px;
+        margin-left: -20px;
+
+        justify-content: flex-start;
+    }
+
+    .products .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+
+    .products .product .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .products .product .price
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .products .product .price .old
+    {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .advantages .row
+    {
+        margin-bottom: -55px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(100% - 25px);
+        max-width: calc(100% - 25px);
+        margin-bottom: 55px;
+    }
+
+
+
+    /*-----------------
+        How it work
+    -----------------*/
+    .how_it_work .desc
+    {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        padding: 12px 32px 12px 20px;
+    }
+
+    .how_it_work .desc:before
+    {
+        right: 18px;
+
+        width: calc(100% + 20px);
+    }
+
+
+
+    /*---------------
+        Solutions
+    ---------------*/
+    .solutions .block_head .title
+    {
+        padding-left: 20px;
+    }
+
+
+    .solutions .row
+    {
+        margin-bottom: -35px;
+    }
+
+    .solutions .row > *
+    {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+
+    .solutions .product .features
+    {
+        border: none;
+    }
+
+    .solutions .product .features > *.big
+    {
+        width: 100%;
+
+        text-align: left;
+    }
+
+
+
+    /*----------------------
+        Seria advantages
+    ----------------------*/
+    .seria_advantages
+    {
+        padding-top: 0;
+    }
+
+
+
+    /*-----------------
+        Application
+    -----------------*/
+    .application .head .title
+    {
+        width: 100%;
+    }
+
+
+    .application .row
+    {
+        margin-left: -20px;
+    }
+
+    .application .row > *
+    {
+        margin-left: 20px;
+    }
+
+    .application .row > img
+    {
+        width: calc(50% - 20px);
+        max-width: calc(100% - 20px);
+    }
+
+
+
+    /*-------------------------------
+        Application olympic games
+    -------------------------------*/
+    .application_olympic_games .head .title
+    {
+        width: 100%;
+    }
+
+    .application_olympic_games .head .seria
+    {
+        font-size: 17px;
+
+        overflow: hidden;
+
+        padding: 4px 32px 5px 24px;
+    }
+
+
+    .application_olympic_games .item .img
+    {
+        padding-bottom: 200px;
+    }
+
+
+    .application_olympic_games .bottom
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form .info .title
+    {
+        font-size: 19px;
+        line-height: 25px;
+    }
+}

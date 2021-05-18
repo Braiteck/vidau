@@ -1,0 +1,452 @@
+@media print, (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 36px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo
+    {
+        margin-top: 4px;
+    }
+
+    header .logo .name
+    {
+        display: none;
+    }
+
+
+    header .info
+    {
+        width: calc(100% - 200px);
+    }
+
+
+    header .menu
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title
+    {
+        padding: 16px 44px 16px 30px;
+    }
+
+    .block_head .title small
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .block_head .order_btn
+    {
+        font-size: 17px;
+
+        padding: 12px 30px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit_btn
+    {
+        font-size: 17px;
+
+        min-width: 200px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .title
+    {
+        margin-bottom: 30px;
+    }
+
+    .text_block .title small
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .text_block .img.left,
+    .text_block .img.right
+    {
+        max-width: calc(50% - 170px);
+        margin: 0 80px 40px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        min-height: 520px;
+    }
+
+
+    .first_section .info
+    {
+        padding-right: 51px;
+    }
+
+    .first_section .info .title
+    {
+        font-size: 36px;
+        line-height: 42px;
+
+        padding: 20px 50px 22px 32px;
+    }
+
+    .first_section .info .title small
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .first_section .info .title img
+    {
+        right: -51px;
+    }
+
+
+    .first_section .info .link
+    {
+        font-size: 17px;
+
+        width: 380px;
+        margin-top: 30px;
+        padding: 10px 25px;
+    }
+
+
+    .first_section .point2
+    {
+        left: 55%;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products
+    {
+        padding: 50px 0;
+    }
+
+
+    .products .row
+    {
+        margin-bottom: -50px;
+        margin-left: -50px;
+        padding: 0 40px;
+    }
+
+    .products .row > *
+    {
+        width: calc(33.333% - 50px);
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+
+    .products .product .thumb
+    {
+        padding-bottom: 110%;
+    }
+
+    .products .product .name
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        padding-left: 20px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        padding: 70px 0 80px;
+    }
+
+
+    .advantages .block_head
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .advantages .item
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .advantages .item .icon
+    {
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .advantages .item .name
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .advantages .item .desc
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-----------------
+        How it work
+    -----------------*/
+    .how_it_work
+    {
+        min-height: 540px;
+    }
+
+
+    .how_it_work .desc
+    {
+        font-size: 17px;
+
+        bottom: 120px;
+
+        width: 384px;
+        margin-right: 65px;
+        padding: 20px 48px 20px 24px;
+    }
+
+
+    .how_it_work .schema
+    {
+        top: 30px;
+        right: 20px;
+
+        max-height: calc(100% - 60px);
+        margin-right: 0;
+    }
+
+
+
+    /*---------------
+        Solutions
+    ---------------*/
+    .solutions .features
+    {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .solutions .features > *
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .solutions .product .features > *,
+    .solutions .product .price
+    {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+
+    .solutions .product .buy_btn
+    {
+        width: 144px;
+    }
+
+
+
+    /*-----------------
+        Application
+    -----------------*/
+    .application
+    {
+        padding: 50px 0;
+    }
+
+
+    .application .head
+    {
+        margin-bottom: 40px;
+    }
+
+    .application .head .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        padding: 5px 44px 6px 28px;
+    }
+
+    .application .head .desc
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        max-width: calc(100% - 269px);
+        margin-left: 40px;
+    }
+
+
+    .application .row
+    {
+        margin-left: -30px;
+    }
+
+    .application .row > *
+    {
+        max-width: calc(100% - 30px);
+        margin-left: 30px;
+    }
+
+    .application .row > *.item
+    {
+        width: calc(100% - 442px);
+    }
+
+
+    .application .item .location
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-------------------------------
+        Application olympic games
+    -------------------------------*/
+    .application_olympic_games
+    {
+        padding: 50px 0;
+    }
+
+
+    .application_olympic_games .head
+    {
+        margin-bottom: 30px;
+    }
+
+    .application_olympic_games .head .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        padding: 5px 44px 6px 28px;
+    }
+
+    .application_olympic_games .head .seria
+    {
+        font-size: 22px;
+
+        padding: 6px 40px 7px 20px;
+    }
+
+    .application_olympic_games .head .desc
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .application_olympic_games .item .images
+    {
+        margin-bottom: 0;
+        margin-left: -30px;
+    }
+
+    .application_olympic_games .item .images > *
+    {
+        width: calc(20% - 30px);
+        max-width: calc(100% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .application_olympic_games .item .images > img
+    {
+        width: calc(40% - 30px);
+    }
+
+
+    .application_olympic_games .item .img
+    {
+        padding-bottom: 235px;
+    }
+
+
+    .application_olympic_games .bottom
+    {
+        margin-top: -340px;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form .data
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 50px 40px;
+    }
+
+
+    .order_form .info
+    {
+        width: 372px;
+    }
+
+    .order_form .info .title
+    {
+        font-size: 22px;
+    }
+
+    .order_form .info .phone
+    {
+        font-size: 22px;
+
+        margin-top: 28px;
+    }
+
+
+    .order_form .form
+    {
+        width: calc(100% - 412px);
+    }
+}

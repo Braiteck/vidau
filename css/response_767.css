@@ -1,0 +1,398 @@
+@media print, (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 27px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header .callback_btn
+    {
+        display: none;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        margin-left: 15px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title
+    {
+        width: calc(100% - 24px);
+        padding: 10px 36px 10px 24px;
+    }
+
+    .block_head .title small
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 0;
+    }
+
+
+    .block_head .logo
+    {
+        display: none;
+    }
+
+
+    .block_head .order_btn
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .bottom .agree
+    {
+        width: calc(100% - 195px);
+    }
+
+    .form .submit_btn
+    {
+        font-size: 16px;
+
+        min-width: 160px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .img.left,
+    .text_block .img.right
+    {
+        float: none;
+
+        max-width: 100%;
+        margin: 0 0 20px;
+    }
+
+
+    .text_block .title
+    {
+        margin-bottom: 24px;
+    }
+
+    .text_block .title small
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        margin-top: 0;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        min-height: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    .first_section .info
+    {
+        padding-right: 36px;
+    }
+
+    .first_section .info .title
+    {
+        font-size: 26px;
+        line-height: 30px;
+
+        padding: 16px 24px 16px 24px;
+    }
+
+    .first_section .info .title small
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .first_section .info .title img
+    {
+        right: -37px;
+
+        width: 140px;
+        height: auto;
+    }
+
+
+    .first_section .info .link
+    {
+        width: auto;
+        margin-top: 24px;
+        margin-left: 24px;
+        padding: 10px 20px;
+    }
+
+
+    .first_section .point1,
+    .first_section .point2
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-bottom: -35px;
+        margin-left: -25px;
+
+        justify-content: center;
+    }
+
+    .products .row > *
+    {
+        width: calc(50% - 25px);
+        margin-bottom: 35px;
+        margin-left: 25px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -35px;
+        margin-left: -25px;
+
+        justify-content: center;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(50% - 25px);
+        max-width: calc(50% - 25px);
+        margin-bottom: 35px;
+        margin-left: 25px;
+    }
+
+
+    .advantages .item .name
+    {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+
+
+    /*-----------------
+        How it work
+    -----------------*/
+    .how_it_work
+    {
+        min-height: 0;
+        padding-bottom: 0;
+    }
+
+
+    .how_it_work .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+    .how_it_work .desc
+    {
+        font-size: 15px;
+
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        width: calc(100% - 24px);
+        margin-right: 0;
+        padding: 12px 40px 12px 24px;
+    }
+
+    .how_it_work .schema
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        max-width: 100%;
+        max-height: none;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    /*---------------
+        Solutions
+    ---------------*/
+    .solutions .row
+    {
+        margin-bottom: -20px;
+
+        flex-wrap: wrap;
+    }
+
+    .solutions .row > *
+    {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+
+    .solutions .product .name
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .solutions .product .features > *,
+    .solutions .product .price
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+
+    /*-----------------
+        Application
+    -----------------*/
+    .application
+    {
+        padding-top: 0;
+    }
+
+
+    .application .head
+    {
+        margin-bottom: 30px;
+    }
+
+    .application .head .title
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        width: calc(100% - 20px);
+    }
+
+
+    .application .head .desc
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        width: 100%;
+        max-width: 100%;
+        margin-top: 12px;
+        margin-left: 0;
+        padding-left: 24px;
+    }
+
+
+
+    /*-------------------------------
+        Application olympic games
+    -------------------------------*/
+    .application_olympic_games .head
+    {
+        margin-bottom: 30px;
+    }
+
+    .application_olympic_games .head .title
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .application_olympic_games .head .seria
+    {
+        font-size: 18px;
+
+        padding: 4px 32px 5px 16px;
+    }
+
+    .application_olympic_games .head .desc
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        width: 100%;
+        max-width: 100%;
+        margin-top: 12px;
+        margin-left: 0;
+        padding-left: 24px;
+    }
+
+
+    .application_olympic_games .item .images
+    {
+        margin-left: -20px;
+    }
+
+    .application_olympic_games .item .images > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .application_olympic_games .item .img
+    {
+        padding-bottom: 279px;
+    }
+
+
+    .application_olympic_games .bottom
+    {
+        margin-top: -28px;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form .info .title
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .order_form .info .phone
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        margin-top: 16px;
+    }
+}
