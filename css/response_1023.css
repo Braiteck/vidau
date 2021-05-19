@@ -492,4 +492,263 @@
     {
         width: 100%;
     }
+
+
+
+    /*----------------------------
+        Cultural - Block title
+    ----------------------------*/
+    .cultural .block_title
+    {
+        font-size: 32px;
+
+        padding-left: 28px;
+    }
+
+
+
+    /*--------------------------
+        Cultural - Head info
+    --------------------------*/
+    .cultural .head_info
+    {
+        margin-bottom: 50px;
+    }
+
+    .cultural .head_info .cont
+    {
+        min-height: 400px;
+    }
+
+
+    .cultural .head_info .title
+    {
+        font-size: 38px;
+
+        width: 528px;
+    }
+
+    .cultural .head_info .desc
+    {
+        font-size: 20px;
+
+        width: 364px;
+    }
+
+    .cultural .head_info .icons img
+    {
+        max-width: 44px;
+        max-height: 36px;
+        margin: 0 11px;
+    }
+
+
+
+    /*----------------------
+        Cultural - About
+    ----------------------*/
+    .cultural .about .full_range_services
+    {
+        width: 100%;
+    }
+
+    .cultural .about .full_range_services .block_title
+    {
+        font-size: 44px;
+    }
+
+    .cultural .about .full_range_services .desc
+    {
+        font-size: 20px;
+
+        width: 100%;
+        margin-top: 28px;
+    }
+
+    .cultural .about .full_range_services .employees
+    {
+        margin-top: 64px;
+    }
+
+    .cultural .about .full_range_services .employees .title
+    {
+        font-size: 22px;
+
+        width: 240px;
+        margin-bottom: -3px;
+    }
+
+    .cultural .about .full_range_services .employees .title span
+    {
+        font-size: 30px;
+    }
+
+    .cultural .about .full_range_services .employees .val
+    {
+        font-size: 26px;
+        line-height: 90%;
+
+        width: 340px;
+        margin-left: -40px;
+        padding-left: 40px;
+    }
+
+    .cultural .about .full_range_services .employees .val b
+    {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .cultural .about .full_range_services .employees .val span
+    {
+        margin-bottom: 16px;
+    }
+
+
+
+    .cultural .about .capabilities
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .cultural .about .capabilities .list
+    {
+        font-size: 16px;
+
+        padding-top: 0;
+    }
+
+    .cultural .about .capabilities .list > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .cultural .about .capabilities .download
+    {
+        margin-top: 40px;
+    }
+
+    .cultural .about .capabilities .download a
+    {
+        font-size: 16px;
+
+        padding: 10px 24px;
+    }
+
+    .cultural .about .capabilities .download a .icon
+    {
+        margin-left: 24px;
+    }
+
+
+
+    .cultural .about .message
+    {
+        font-size: 19px;
+    }
+
+    .cultural .about .message .icon + *
+    {
+        width: calc(100% - 104px);
+    }
+
+
+
+    /*--------------------------
+        Cultural - Solutions
+    --------------------------*/
+    .cultural .solutions .tabs
+    {
+        margin-left: -8px;
+    }
+
+    .cultural .solutions .tabs > *,
+    .cultural .solutions .tabs > *.category > *
+    {
+        margin-bottom: 8px;
+        margin-left: 8px;
+    }
+
+
+    .cultural .solutions .tabs > *.category .name
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        width: 100%;
+        padding-top: 8px;
+    }
+
+
+    .cultural .solutions .images
+    {
+        margin-bottom: 24px;
+    }
+
+    .cultural .solutions .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .cultural .solutions .message
+    {
+        font-size: 20px;
+    }
+
+    .cultural .solutions .message .icon + *
+    {
+        width: calc(100% - 100px);
+    }
+
+
+
+    /*-------------------------
+        Cultural - Projects
+    -------------------------*/
+    .cultural .projects .grid
+    {
+        grid-gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    /*-----------------------
+        Cultural - Pluses
+    -----------------------*/
+    .cultural .pluses
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .cultural .pluses .item
+    {
+        font-size: 16px;
+    }
+
+    .cultural .pluses .item .icon
+    {
+        width: 56px;
+        height: 56px;
+    }
+
+    .cultural .pluses .item .icon + *
+    {
+        width: calc(100% - 88px);
+    }
+
+
+
+    /*------------------------
+        Cultural - Reviews
+    ------------------------*/
+    .cultural .reviews
+    {
+        padding: 50px 0;
+    }
 }

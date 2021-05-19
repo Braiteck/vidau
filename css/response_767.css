@@ -11,6 +11,14 @@
 
 
 
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        top: -52px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -394,5 +402,269 @@
         line-height: 26px;
 
         margin-top: 16px;
+    }
+
+
+
+    /*----------------------------
+        Cultural - Block title
+    ----------------------------*/
+    .cultural .block_title
+    {
+        font-size: 28px;
+
+        padding-left: 24px;
+    }
+
+
+
+    /*--------------------------
+        Cultural - Head info
+    --------------------------*/
+    .cultural .head_info .cont
+    {
+        padding-bottom: 40px;
+    }
+
+    .cultural .head_info .title
+    {
+        font-size: 32px;
+
+        width: 100%;
+    }
+
+    .cultural .head_info .desc
+    {
+        font-size: 18px;
+
+        width: 328px;
+    }
+
+    .cultural .head_info .icons
+    {
+        margin-bottom: -16px;
+    }
+
+    .cultural .head_info .icons img
+    {
+        max-width: 44px;
+        max-height: 36px;
+        margin: 0 8px 16px;
+    }
+
+
+
+    /*----------------------
+        Cultural - About
+    ----------------------*/
+    .cultural .about .full_range_services
+    {
+        padding: 32px;
+    }
+
+    .cultural .about .full_range_services .block_title
+    {
+        font-size: 38px;
+    }
+
+    .cultural .about .full_range_services .desc
+    {
+        font-size: 18px;
+
+        margin-top: 24px;
+    }
+
+    .cultural .about .full_range_services .employees .title
+    {
+        font-size: 20px;
+
+        width: 212px;
+        margin-bottom: -3px;
+    }
+
+    .cultural .about .full_range_services .employees .title span
+    {
+        font-size: 28px;
+    }
+
+    .cultural .about .full_range_services .employees .val
+    {
+        font-size: 22px;
+        line-height: 90%;
+
+        width: 300px;
+        margin-left: -32px;
+        padding-left: 32px;
+    }
+
+    .cultural .about .full_range_services .employees .val b
+    {
+        font-size: 72px;
+        line-height: 86px;
+    }
+
+
+
+    .cultural .about .capabilities .list
+    {
+        font-size: 15px;
+    }
+
+    .cultural .about .capabilities .list > *
+    {
+        position: relative;
+
+        padding-left: 40px;
+    }
+
+    .cultural .about .capabilities .list > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    .cultural .about .capabilities .download
+    {
+        margin-top: 32px;
+    }
+
+
+    .cultural .about .message
+    {
+        font-size: 17px;
+    }
+
+    .cultural .about .message .icon
+    {
+        margin-left: 0;
+    }
+
+    .cultural .about .message .icon + *
+    {
+        width: calc(100% - 86px);
+    }
+
+
+
+    /*--------------------------
+        Cultural - Solutions
+    --------------------------*/
+    .cultural .solutions .tabs
+    {
+        margin-left: -6px;
+    }
+
+    .cultural .solutions .tabs > *,
+    .cultural .solutions .tabs > *.category > *
+    {
+        margin-bottom: 6px;
+        margin-left: 6px;
+    }
+
+    .cultural .solutions .tabs button
+    {
+        font-size: 14px;
+
+        padding: 5px 10px;
+    }
+
+    .cultural .solutions .tabs > *.category .name
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+    .cultural .solutions .images img
+    {
+        width: 100%;
+    }
+
+    .cultural .solutions .images img + img
+    {
+        margin-top: 20px;
+    }
+
+
+    .cultural .solutions .desc
+    {
+        font-size: 15px;
+    }
+
+
+    .cultural .solutions .message
+    {
+        font-size: 18px;
+    }
+
+    .cultural .solutions .message .icon + *
+    {
+        width: calc(100% - 92px);
+    }
+
+
+    .cultural .projects .head .tabs
+    {
+        width: calc(100% + 6px);
+        margin-left: -6px;
+    }
+
+    .cultural .projects .head .tabs > *
+    {
+        margin-bottom: 6px;
+        margin-left: 6px;
+    }
+
+    .cultural .projects .head .tabs button
+    {
+        line-height: 32px;
+
+        width: calc(33.333% - 6px);
+        height: 32px;
+    }
+
+
+    .cultural .projects .grid
+    {
+        grid-gap: 12px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cultural .projects .grid > *.big_h
+    {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .cultural .projects .project.big_h .thumb
+    {
+        padding-bottom: 122.89%;
+    }
+
+
+
+    /*-----------------------
+        Cultural - Pluses
+    -----------------------*/
+    .cultural .pluses .list
+    {
+        padding-top: 12px;
+    }
+
+
+    .cultural .pluses .item
+    {
+        font-size: 15px;
+    }
+
+    .cultural .pluses .item .icon
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+    .cultural .pluses .item .icon + *
+    {
+        width: calc(100% - 72px);
     }
 }

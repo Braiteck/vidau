@@ -353,6 +353,38 @@ button
 
 
 
+/*----------
+    Tabs
+----------*/
+.tab_content
+{
+    position: relative;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 0;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.tab_content.active
+{
+    visibility: visible;
+    overflow: visible;
+
+    height: auto;
+
+    transition: opacity .5s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+
 /*------------
     Header
 ------------*/
@@ -2614,4 +2646,877 @@ header .menu .item > a.touch_link + .sub_menu.show
 .order_form .form
 {
     width: calc(100% - 453px);
+}
+
+
+
+/*----------------------------
+    Cultural - Block title
+----------------------------*/
+.cultural .block_title
+{
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 48px;
+
+    position: relative;
+
+    margin-bottom: 24px;
+    padding-left: 36px;
+}
+
+.cultural .block_title.pad_right
+{
+    padding-right: 124px;
+}
+
+.cultural .block_title:before
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 9px;
+    height: calc(100% - 8px);
+    margin: auto;
+
+    content: '';
+
+    background: #f25040;
+}
+
+
+
+/*--------------------------
+    Cultural - Head info
+--------------------------*/
+.cultural .head_info
+{
+    color: #fff;
+
+    position: relative;
+    z-index: 3;
+
+    overflow: hidden;
+
+    width: 1600px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-bottom: 70px;
+    margin-left: auto;
+
+    background: #ddd;
+}
+
+.cultural .head_info:after
+{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 446px;
+    max-height: 100%;
+
+    content: '';
+    transform: matrix(1, 0, 0, -1, 0, 0);
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, .73) 30.21%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.cultural .head_info .bg
+{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+
+.cultural .head_info .cont
+{
+    display: flex;
+
+    min-height: 548px;
+    padding-top: 53px;
+    padding-bottom: 53px;
+
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+.cultural .head_info .info
+{
+    width: 100%;
+}
+
+.cultural .head_info .title
+{
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 53px;
+
+    width: 635px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+}
+
+.cultural .head_info .desc
+{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 120.4%;
+
+    width: 635px;
+    max-width: 100%;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+}
+
+.cultural .head_info .icons
+{
+    display: flex;
+
+    width: 100%;
+    margin-top: 40px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cultural .head_info .icons img
+{
+    display: block;
+
+    margin: 0 17px;
+}
+
+
+
+/*----------------------
+    Cultural - About
+----------------------*/
+.cultural .about
+{
+    margin-bottom: 50px;
+}
+
+
+.cultural .about .full_range_services
+{
+    color: #fff;
+
+    position: relative;
+    z-index: 3;
+
+    overflow: hidden;
+
+    width: 50%;
+    padding: 54px 54px 68px;
+
+    background: #000;
+}
+
+.cultural .about .full_range_services .bg
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.cultural .about .full_range_services .block_title
+{
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 75.5%;
+}
+
+.cultural .about .full_range_services .desc
+{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 120%;
+
+    width: 414px;
+    max-width: 100%;
+    margin-top: 32px;
+}
+
+.cultural .about .full_range_services .employees
+{
+    margin-top: 164px;
+}
+
+.cultural .about .full_range_services .employees .title
+{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 120%;
+
+    width: 270px;
+    max-width: 100%;
+    margin-bottom: -4px;
+}
+
+.cultural .about .full_range_services .employees .title span
+{
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 100%;
+
+    display: block;
+}
+
+.cultural .about .full_range_services .employees .val
+{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 75%;
+
+    display: flex;
+
+    width: 389px;
+    max-width: 100%;
+    margin-left: -54px;
+    padding-left: 54px;
+
+    background: #f25040;
+
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.cultural .about .full_range_services .employees .val b
+{
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 106px;
+
+    display: block;
+}
+
+.cultural .about .full_range_services .employees .val span
+{
+    margin-bottom: 20px;
+    margin-left: 12px;
+}
+
+
+.cultural .about .capabilities
+{
+    width: calc(50% - 64px);
+    margin-left: auto;
+}
+
+.cultural .about .capabilities .list
+{
+    font-size: 18px;
+    line-height: 115%;
+
+    padding-top: 12px;
+}
+
+.cultural .about .capabilities .list > *
+{
+    position: relative;
+
+    display: flex;
+
+    min-height: 24px;
+    padding-left: 54px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cultural .about .capabilities .list > *:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    content: '';
+
+    background: url(../images/ic_list_item.svg) 0 0 no-repeat;
+}
+
+.cultural .about .capabilities .list > * + *
+{
+    margin-top: 20px;
+}
+
+
+.cultural .about .capabilities .download
+{
+    display: flex;
+
+    margin-top: 76px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cultural .about .capabilities .download a
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+
+    display: flex;
+
+    padding: 13px 32px;
+
+    text-decoration: none;
+
+    background: #f25040;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cultural .about .capabilities .download a .size
+{
+    margin-left: 12px;
+}
+
+.cultural .about .capabilities .download a .icon
+{
+    display: block;
+
+    margin-left: 32px;
+}
+
+
+.cultural .about .message
+{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 130%;
+
+    display: flex;
+
+    width: 100%;
+    margin-top: 40px;
+    padding: 16px 0;
+
+    border-top: 2px solid #f25040;
+    border-bottom: 2px solid #f25040;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cultural .about .message .icon
+{
+    display: block;
+
+    width: 62px;
+    margin-left: 12px;
+}
+
+.cultural .about .message .icon + *
+{
+    width: calc(100% - 130px);
+}
+
+
+
+/*--------------------------
+    Cultural - Solutions
+--------------------------*/
+.cultural .solutions
+{
+    margin-bottom: 50px;
+    padding: 0;
+
+    background: none;
+}
+
+
+.cultural .solutions .tabs
+{
+    display: flex;
+
+    margin-left: -12px;
+    padding-bottom: 12px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cultural .solutions .tabs > *,
+.cultural .solutions .tabs > *.category > *
+{
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+
+.cultural .solutions .tabs > *.category
+{
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cultural .solutions .tabs > *.category .name
+{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+
+    width: 250px;
+}
+
+
+.cultural .solutions .tabs button
+{
+    font-size: 17px;
+    line-height: 130%;
+
+    display: block;
+
+    padding: 6px 10px;
+
+    transition: .2s linear;
+    text-align: left;
+
+    background: #f2f2f2;
+}
+
+.cultural .solutions .tabs button:hover,
+.cultural .solutions .tabs button.active
+{
+    color: #fff;
+
+    background: #e21501;
+}
+
+
+.cultural .solutions .images
+{
+    display: flex;
+
+    width: calc(100% + 276px);
+    margin: 0 -138px 32px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cultural .solutions .images img
+{
+    display: block;
+
+    width: calc(50% - 16px);
+}
+
+
+.cultural .solutions .desc
+{
+    font-size: 18px;
+    line-height: 130%;
+}
+
+
+.cultural .solutions .message
+{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 130%;
+
+    display: flex;
+
+    margin-top: 25px;
+    padding: 20px 0;
+
+    border-top: 2px solid #f25040;
+    border-bottom: 2px solid #f25040;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cultural .solutions .message .icon
+{
+    display: block;
+
+    width: 62px;
+}
+
+.cultural .solutions .message .icon + *
+{
+    width: calc(100% - 126px);
+}
+
+
+
+/*-------------------------
+    Cultural - Projects
+-------------------------*/
+.cultural .projects
+{
+    margin-bottom: 50px;
+}
+
+
+.cultural .projects .head
+{
+    display: flex;
+
+    padding-bottom: 4px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.cultural .projects .head .tabs
+{
+    display: flex;
+
+    margin-left: -12px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cultural .projects .head .tabs > *
+{
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+.cultural .projects .head .tabs button
+{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+
+    display: block;
+
+    width: 115px;
+    height: 34px;
+
+    transition: .2s linear;
+
+    background: #f2f2f2;
+}
+
+.cultural .projects .head .tabs button:hover,
+.cultural .projects .head .tabs button.active
+{
+    color: #fff;
+
+    background: #e21501;
+}
+
+
+.cultural .projects .grid
+{
+    display: grid;
+
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+}
+
+
+.cultural .projects .project
+{
+    color: currentColor;
+
+    position: relative;
+
+    display: block;
+
+    text-decoration: none;
+}
+
+.cultural .projects .project .thumb
+{
+    position: relative;
+
+    overflow: hidden;
+
+    padding-bottom: 71.13%;
+
+    background: #ddd;
+}
+
+.cultural .projects .project .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.cultural .projects .project .info
+{
+    font-size: 12px;
+    line-height: 14px;
+
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 19px;
+
+    background: rgba(255, 255, 255, .81);
+}
+
+.cultural .projects .project .info > *
+{
+    position: relative;
+
+    padding-left: 24px;
+}
+
+.cultural .projects .project .info > * + *
+{
+    margin-top: 8px;
+}
+
+.cultural .projects .project .info .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 13px;
+    height: 13px;
+}
+
+
+.cultural .projects .grid > *.big_h
+{
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
+
+.cultural .projects .grid > *.big_h .thumb
+{
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+    padding-bottom: 0;
+}
+
+
+
+/*-----------------------
+    Cultural - Pluses
+-----------------------*/
+.cultural .pluses
+{
+    margin-bottom: 58px;
+}
+
+
+.cultural .pluses .list
+{
+    padding-top: 34px;
+}
+
+.cultural .pluses .list > * + *
+{
+    margin-top: 20px;
+}
+
+
+.cultural .pluses .item
+{
+    font-size: 18px;
+    line-height: 130%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cultural .pluses .item .icon
+{
+    display: flex;
+
+    width: 62px;
+    height: 68px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cultural .pluses .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cultural .pluses .item .icon + *
+{
+    width: calc(100% - 100px);
+
+    align-self: center;
+}
+
+
+
+/*------------------------
+    Cultural - Reviews
+------------------------*/
+.cultural .reviews
+{
+    margin-bottom: 50px;
+    padding: 76px 0 50px;
+
+    background: #fcfcfc;
+}
+
+
+.cultural .reviews .slider_wrap
+{
+    position: relative;
+}
+
+
+.cultural .reviews .review
+{
+    color: currentColor;
+    font-size: 12px;
+    line-height: 14px;
+
+    display: block;
+
+    text-decoration: none;
+}
+
+.cultural .reviews .review .thumb
+{
+    position: relative;
+
+    overflow: hidden;
+
+    padding-bottom: 126%;
+
+    border: 12px solid #f1f1f1;
+    background: #ddd;
+}
+
+.cultural .reviews .review .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.cultural .reviews .review .name
+{
+    margin-top: 15px;
+}
+
+
+
+@media print, (max-width: 1515px)
+{
+    .cultural .solutions .images
+    {
+        width: 100%;
+        margin: 0 0 32px;
+    }
+
+    .cultural .solutions .images img
+    {
+        width: calc(50% - 10px);
+    }
 }

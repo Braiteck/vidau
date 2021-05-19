@@ -1,23 +1,37 @@
 $(() => {
-	// Основной слайдер на главной
-	if ($('.reviews .swiper-container').length) {
-		new Swiper('.reviews .swiper-container', {
+	// Отзывы
+	if ($('.cultural .reviews .swiper-container').length) {
+		new Swiper('.cultural .reviews .swiper-container', {
 			loop: true,
 			speed: 500,
 			watchSlidesVisibility: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			spaceBetween: 30,
-			slidesPerView: 1,
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'bullets',
-				clickable: true,
-				bulletActiveClass: 'active'
-			},
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
+				nextEl: '.reviews_swiper-button-next',
+				prevEl: '.reviews_swiper-button-prev'
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 16,
+					slidesPerView: 2
+				},
+				480: {
+					spaceBetween: 20,
+					slidesPerView: 2
+				},
+				768: {
+					spaceBetween: 20,
+					slidesPerView: 3
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 4
+				},
+				1280: {
+					spaceBetween: 34,
+					slidesPerView: 4
+				}
 			}
 		})
 	}

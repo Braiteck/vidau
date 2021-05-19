@@ -19,6 +19,74 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
+	// Fancybox
+	$.fancybox.defaults.hash = false
+	$.fancybox.defaults.backFocus = false
+	$.fancybox.defaults.autoFocus = false
+	$.fancybox.defaults.animationEffect = 'zoom'
+	$.fancybox.defaults.transitionEffect = 'slide'
+	$.fancybox.defaults.speed = 500
+	$.fancybox.defaults.gutter = 40
+	$.fancybox.defaults.i18n = {
+		'en': {
+			CLOSE: "Закрыть",
+			NEXT: "Следующий",
+			PREV: "Предыдущий",
+			ERROR: "Запрошенный контент не может быть загружен.<br /> Пожалуйста, повторите попытку позже.",
+			PLAY_START: "Запустить слайдшоу",
+			PLAY_STOP: "Остановить слайдшоу",
+			FULL_SCREEN: "На весь экран",
+			THUMBS: "Миниатюры",
+			DOWNLOAD: "Скачать",
+			SHARE: "Поделиться",
+			ZOOM: "Увеличить"
+		}
+	}
+
+	// Увеличение картинки
+	$('.fancy_img').fancybox({
+		mobile: {
+			clickSlide: "close"
+		}
+	})
+
+
+	// Табы
+	var locationHash = window.location.hash
+
+	$('body').on('click', '.tabs button', function (e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
+
+			$parent.find('.tabs:first button').removeClass('active')
+			$parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			$activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
+			$activeTabContent = $(locationHash),
+			$parent = $activeTab.closest('.tabs_container'),
+			level = $activeTab.data('level')
+
+		$parent.find('.tabs:first button').removeClass('active')
+		$parent.find('.tab_content.' + level).removeClass('active')
+
+		$activeTab.addClass('active')
+		$activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
+	}
+
+
 	// Моб. версия
 	if ($(window).width() < 360) $('meta[name=viewport]').attr('content', 'width=360, user-scalable=no')
 
